@@ -1,0 +1,12 @@
+build/*.js
+config/*.js
+bower_components/foo/*.js
+ecosystem.config.js
+.gitignore
+coverage/**/*.js
+coverage/**/*.css
+package.json
+ecosystem.config.js
+nuxt.config.js
+plugins/qrcode.js
+static

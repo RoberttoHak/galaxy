@@ -1,0 +1,76 @@
+.exchange-wrapper{
+
+  .default-img{
+    margin-bottom: 80px;
+    display: flex;
+
+    @media (max-width: $break-sms) {
+      margin-bottom: 32px;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .text-new-sec{
+    padding-top: 0;
+    padding-bottom: 0;
+    background: transparent;
+    margin-bottom: 80px;
+
+    @media (max-width: $break-sms) {
+      margin-bottom: 32px;
+    }
+
+    .right-img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .full-container{
+      @media (max-width: 1380px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @media (max-width: $break-sms) {
+       padding-bottom: 0;
+      }
+    }
+  }
+
+  .exchange-info{
+
+    h2{
+      width: 432px;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 95%;
+
+      @media (max-width: $break-sms) {
+        width: 100%;
+      }
+    }
+
+    .content{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .item{
+        width: 304px;
+        background: $c-greyscale-100;
+        border-radius: 3px;
+        padding: 24px;
+        margin-bottom: 16px;
+
+        @media (max-width: $break-smsm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

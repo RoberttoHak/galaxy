@@ -1,0 +1,247 @@
+.custom-button {
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  //overflow: hidden;
+
+  .tooltip{
+    display: none;
+  }
+
+  &:hover{
+    .tooltip{
+      display: block;
+      position: absolute;
+      top: -55px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 3px;
+      padding: 8px 24px;
+      width: 310px;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+
+      @media (max-width: 407px) {
+        padding: 8px;
+      }
+
+      @media (max-width: 375px) {
+        top: -75px;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 6px solid rgba(0, 0, 0, 0.8);
+        right: 47.5%;
+        top: 40px;
+
+        @media (max-width: 375px) {
+          top: 64px;
+        }
+      }
+    }
+  }
+
+
+  .has-icon{
+    @media (max-width: $break-sms) {
+      margin-right: 5px;
+    }
+  }
+
+  .svg{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .input-upload{
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
+  .text{
+    cursor: pointer;
+  }
+
+  .no-label{
+    margin-right: 0 !important;
+  }
+
+  .no-label-mobile{
+    @media (max-width: $break-sms) {
+      margin-right: 0 !important;
+    }
+  }
+
+  .custom-size{
+    width: 18px;
+    height: 18px;
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &__primary{
+    background: $c-primary;
+    position: relative;
+    border: 1px solid $c-primary;
+    //overflow: hidden;
+
+    &:hover{
+      background: $c-prim-lighter-10
+    }
+
+    &:active{
+      background: $c-prim-darker-10
+    }
+  }
+
+  &__ghost{
+    background: transparent;
+    position: relative;
+    border: 1px solid rgba(214, 210, 217, 1);
+  }
+
+  &__grey{
+    background: $c-greyscale-80;
+    position: relative;
+  }
+
+  &__warning{
+    background: transparent;
+    position: relative;
+    border: 1px solid $c-system-error;
+  }
+
+  &__full-warning{
+    background: $c-system-error;
+    position: relative;
+    border: 1px solid $c-system-error;
+  }
+
+  &__circle{
+    border-radius: 50% !important;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__medium{
+    padding: 11px 17px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    font-family: $font-primary;
+  }
+  &__custom-medium{
+    padding: 3px 43px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    font-family: $font-primary;
+  }
+  &__large{
+    padding: 15px 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    font-family: $font-primary;
+    border-radius: 4px;
+  }
+  &__small{
+    padding: 3px 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    font-family: $font-primary;
+    border-radius: 4px;
+  }
+  &__full{
+    width: 100%;
+    padding: 11px 17px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    font-family: $font-primary;
+  }
+
+  .emoji{
+    font-weight: 100;
+  }
+
+  &__c-white{
+    color: $c-white;
+  }
+  &__c-black{
+    color: $c-black
+  }
+  &__c-warning{
+    color: $c-system-error
+  }
+  &__c-grey{
+    color: $c-greyscale-20
+  }
+
+
+  .btn-label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__disabled-primary{
+    cursor: not-allowed;
+    background: $c-greyscale-20;
+    color: $c-greyscale-120;
+
+    &:hover{
+      background: $c-greyscale-20
+    }
+    &:active{
+      background: $c-greyscale-20
+    }
+  }
+
+  &__disabled-grey{
+    cursor: not-allowed;
+  }
+
+  &__disabled-new{
+    cursor: not-allowed;
+    background: $c-greyscale-80;
+    color: $c-greyscale-20;
+  }
+
+}
+
+
+
+

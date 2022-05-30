@@ -1,0 +1,29 @@
+.filters-items{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .chip{
+    margin-bottom: 5px;
+    margin-right: 8px;
+    padding: 4px 4px 4px 8px;
+    background: #EADFF2;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+    .chip-text{
+      color: $c-greyscale-120;
+    }
+
+    .chip-img{
+      display: flex;
+      cursor: pointer;
+    }
+  }
+
+  .display-f{
+    margin-left: 16px;
+    cursor: pointer;
+  }
+}

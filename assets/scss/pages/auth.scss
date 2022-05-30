@@ -1,0 +1,16 @@
+.auth-container{
+  max-width: 360px;
+  margin: 66px auto 0 auto;
+
+  @media (max-width: $break-sms) {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 66px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media (max-height: 800px) {
+    //height: calc(100vh - 100px);
+  }
+}

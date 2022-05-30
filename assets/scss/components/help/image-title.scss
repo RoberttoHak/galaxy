@@ -1,0 +1,13 @@
+.image-with-title {
+  display: inline-block;
+  margin: 2px 10px;
+
+  img {
+    display: block;
+  }
+  div.title {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+}

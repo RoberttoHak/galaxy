@@ -1,0 +1,241 @@
+.dropdown-list-wrapper{
+  //width: 100%;
+  display: inline-flex;
+  position: relative;
+
+  &.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  .label-block{
+    position: relative;
+
+    .drop-img-block{
+      width: 24px;
+      height: 24px;
+      border: 1px solid #D6D2D9;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      cursor: pointer;
+      &.view-wallet {
+        border: none;
+        border-radius: 0;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .default-img{
+        width: 24px;
+        height: 24px;
+        display: block;
+        background: #261632;
+
+        &:hover{
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #301C3F;
+        }
+      }
+      &-state {
+        position: absolute;
+        left: -19px;
+        width: 8px;
+        height: 8px;
+        display: inline-flex;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background:$c-connected;
+        border-radius: 50%;
+        &.view-offline{
+          background: $c-not-connected;
+        }
+      }
+    }
+
+
+    .red-circle{
+      width: 8px;
+      height: 8px;
+      display: inline-flex;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: $c-not-connected;
+      border-radius: 50%;
+    }
+  }
+
+  .dropdown-list{
+    position: absolute;
+    top: 48px;
+    left: -120px;
+    min-width: 216px;
+    background: $c-greyscale-140;
+    border-radius: 3px;
+    //padding: 8px 16px;
+    padding: 31px 0 12px 0;
+    z-index: 2;
+
+    li{
+      .divider{
+        width: 100%;
+        height: 1px;
+        background: #F3F3F3;
+        margin: 12px auto 12px auto;
+      }
+
+      .container-li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 12px 15px;
+        cursor: pointer;
+
+        &:hover {
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #301C3F;;
+        }
+
+        &:active .label-item{
+         font-weight: bold;
+        }
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        .left-side{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          .icon-img{
+            margin-right: 11px;
+          }
+        }
+
+        .right-side{
+          cursor: pointer;
+        }
+
+        a{
+          width: 100%;
+          text-decoration: none !important;
+          //@include text-s;
+        }
+
+        span{
+          width: 100%;
+          cursor: pointer;
+          //@include text-s;
+        }
+
+        .new-not{
+          width: 8px;
+          height: 8px;
+          background: #FF7051;
+          display: flex;
+          border-radius: 50%;
+        }
+      }
+
+      .custom-li{
+
+        .img-block{
+          width: auto;
+          display: inline-flex;
+        }
+      }
+    }
+  }
+  .dropdown-wallet{
+    position: absolute;
+    top: 30px;
+    left: -265px;
+    min-width: 296px;
+    background: #1D1126;
+    border-radius: 3px;
+    //padding: 8px 16px;
+    padding: 16px 16px 20px;
+    z-index: 2;
+    color: white;
+    @media (max-width: $break-sms) {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 96px;
+      //top: 55px;
+      background: #1D1126;
+      z-index: 1;
+      height: 100vh;
+    }
+    &-close {
+      display: none;
+      @media (max-width: $break-sms) {
+        right: 16px;
+        top: 12px;
+        font-size: 0;
+        position: absolute;
+        display: block;
+      }
+    }
+    &-connect {
+      border: 1px solid $c-greyscale-100;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      &.view-active {
+        padding: 12px;
+      }
+      &-state {
+        &-circle {
+          width: 8px;
+          height: 8px;
+          display: inline-flex;
+          background:$c-connected;
+          border-radius: 50%;
+        }
+      }
+      &-text {
+        color: $c-greyscale-20;
+        padding-left: 13px;
+        flex: 1;
+        &.view-link {
+          padding-left: 0;
+          * {
+            color: $c-link-lighter;
+          }
+        }
+        &.view-nopadding {
+          padding-left: 0;
+        }
+      }
+      &-button {
+        color: $c-connected;
+        &.view-disconnect {
+          color: $c-not-connected;
+        }
+        &.view-icon {
+          font-size: 0;
+        }
+      }
+      &-info {
+        padding: 24px;
+        text-align: center;
+        background: $c-greyscale-100;
+      }
+    }
+  }
+
+  .custom-top{
+    @media (max-width: $break-sms) {
+      top: 96px;
+    }
+  }
+}

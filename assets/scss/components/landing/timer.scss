@@ -1,0 +1,45 @@
+.timer-wrapper{
+  background: linear-gradient(156.72deg, #3A234E -1.08%, rgba(58, 35, 78, 0) 148%);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //width: 448px;
+  padding: 12px 41px;
+
+  @media only screen and (max-width: 470px){
+    padding: 8px 21px;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .count{
+      text-align: center;
+      backdrop-filter: blur(40px);
+    }
+
+    .text-m{
+      font-weight: 600;
+    }
+  }
+
+  .header-big{
+    margin-top: 0;
+  }
+
+  .days-color{
+    color: rgba(212, 157, 255, 1);
+  }
+  .hours-color{
+    color: rgba(255, 201, 136, 1);
+  }
+  .minutes-color{
+    color: rgba(146, 236, 242, 1);
+  }
+  .seconds-color{
+    color: rgba(168, 245, 227, 1);
+  }
+}

@@ -1,0 +1,69 @@
+.interactive-wrapper{
+  background: #11011F;
+  position: relative;
+  //margin: 0 auto;
+
+  &::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("~assets/img/landing/starsgroup.png");
+    background-position: center;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .full-container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+
+    @media (max-width: $break-smsm) {
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .left-side{
+      width: 432px;
+      margin-right: 80px;
+
+      @media (max-width: $break-smsm) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+
+      h2{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 95%;
+        letter-spacing: -0.01em;
+        color: $c-white;
+
+        @media (max-width: $break-smsm) {
+          font-size: 37px;
+          letter-spacing: -0.02em;
+        }
+      }
+    }
+
+    .right-side{
+      width: 432px;
+
+      @media (max-width: $break-smsm) {
+        width: 100%;
+      }
+
+      .first-line{
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

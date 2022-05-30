@@ -1,0 +1,156 @@
+.marketplace-wrapper{
+  //background: $c-background;
+  display: flex;
+  //height: 100vh;
+  //height: 100%;
+  min-height: 100%;
+
+  .filter{
+    @media (max-width: $break-smsm) {
+      display: none;
+    }
+  }
+
+
+  .main-list-container{
+    padding-bottom: 80px;
+    width: 944px;
+    margin: 20px auto 0 auto;
+
+    @media (max-width: $break-lgs){
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    @media (max-width: $break-md) {
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    @media (max-width: $break-smsm) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .header{
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: $break-smsm) {
+       width: 100%;
+      }
+
+      .header-big{
+        margin-right: 25px;
+
+        @media (max-width: $break-smsm) {
+          display: none;
+        }
+      }
+
+      .filter-block{
+        display: flex;
+
+        @media (max-width: $break-smsm) {
+          width: 100%;
+        }
+
+        .mobile-filter{
+          display: none;
+
+          @media (max-width: $break-smsm) {
+            display: flex;
+            border-right: 0;
+          }
+        }
+
+        .custom-filter-dropdown{
+          margin-bottom: 0;
+          width: 236px;
+
+          @media (max-width: $break-md) {
+            width: auto;
+          }
+
+          @media (max-width: $break-smsm) {
+            width: calc(100% - 63px);
+          }
+        }
+
+        .first-filter{
+          margin-right: 16px;
+
+          @media (max-width: $break-sms) {
+            margin-right: 0;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+
+    .content{
+      //display: flex;
+      //flex-wrap: wrap;
+      //justify-content: space-between;
+      padding-bottom: 32px;
+      display: grid;
+      grid-gap: 16px 16px;
+      grid-template-columns: repeat(auto-fill, 224px);
+      justify-content: center;
+
+      //@media (max-width: $break-md) {
+      //  justify-content: flex-start;
+      //}
+      //
+      @media (max-width: 530px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+    }
+
+    .empty-wrapper{
+      max-width: 343px;
+      background: $c-greyscale-120;
+      border-radius: 3px;
+      margin: 0 auto;
+      padding: 40px 16px;
+
+      .empty-image{
+        display: block;
+        text-align: center;
+        margin-bottom: 3px;
+      }
+    }
+
+    .pagination-wrapper{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-bottom: 40px;
+    }
+  }
+
+  .panel-open{
+    @media (max-width: 1300px) {
+      max-width: 720px;
+    }
+
+    @media (max-width: 1100px) {
+      max-width: 670px;
+    }
+
+    //.market-item{
+    //
+    //}
+  }
+}
+
+.description {
+  color: white;
+}
+
+
+.no-items{
+  height: 100vh;
+}

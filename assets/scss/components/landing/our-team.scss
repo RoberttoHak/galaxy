@@ -1,0 +1,224 @@
+.our-team {
+  background: #120220;
+  //height: 650px;
+  position: relative;
+  overflow: hidden;
+  height: -webkit-fill-available;
+
+  @media (max-width: 2000px) {
+    height: auto;
+  }
+
+  .back-img{
+    width: 100%;
+    position: absolute;
+
+    @media (max-width: 1390px) {
+      height: 100%;
+    }
+
+    @media (max-width: $break-md) {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  //&::after{
+  //  content: "";
+  //  background: url("~assets/img/landing/cloud1.svg") no-repeat;
+  //  position: absolute;
+  //  bottom: 0;
+  //  left: 0;
+  //  width: 415px;
+  //  height: 305px;
+  //
+  //  @media (max-width: $break-xs) {
+  //    width: 100%
+  //  }
+  //}
+  //
+  //&::before{
+  //  content: "";
+  //  background: url("~assets/img/landing/cloud2.svg") no-repeat;
+  //  position: absolute;
+  //  top: 140px;
+  //  right: 0;
+  //  width: 383px;
+  //  height: 247px;
+  //
+  //  @media (max-width: $break-xs) {
+  //    width: 100%
+  //  }
+  //}
+
+  .map-wrapper {
+    //background: url("~assets/img/landing/map.png") no-repeat fixed center;
+    //background: url("~assets/img/landing/map.png") no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    //background-size: 100% 100%;
+
+    @media (max-width: $break-md) {
+      background-size: cover;
+    }
+
+    .cloud1 {
+      width: 415px;
+      height: 305px;
+      display: inline-flex;
+      position: absolute;
+      bottom: 0;
+      left: -30px;
+
+      @media (max-width: 600px) {
+        width: auto;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .cloud2 {
+      width: 383px;
+      height: 247px;
+      display: inline-flex;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @media (max-width: 600px) {
+        width: auto;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      max-width: 384px;
+      margin: 0 auto;
+      padding-top: 72px;
+      padding-bottom: 77px;
+
+      @media (max-width: $break-sms) {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 32px;
+      }
+
+      h2 {
+        margin-bottom: 32px;
+
+        @media (max-width: $break-sms) {
+          margin-bottom: 16px;
+        }
+      }
+
+      .teams {
+        margin-top: 64px;
+
+        .team {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 8px;
+          padding: 16px 24px;
+
+          .team-info {
+
+            .position {
+              font-family: $font-primary;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 20px;
+              line-height: 26px;
+              display: flex;
+              align-items: center;
+              letter-spacing: -0.02em;
+              color: #11011F;
+            }
+
+            .text-m {
+              color: $c-land-background;
+            }
+          }
+
+          .country {
+            display: flex;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+
+            .flag {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .yellow {
+          background: linear-gradient(345.71deg, #FFC988 -14.67%, #F9E788 109.31%), #291A35;
+        }
+
+        .purple {
+          background: linear-gradient(357.76deg, #D49DFF -7.65%, #A49EED 123.01%), #291A35;;
+        }
+
+        .light-blue {
+          background: linear-gradient(153.06deg, #92ECF2 -0.31%, #63A4FF 99.69%), #291A35;;
+        }
+
+      }
+    }
+
+    .footer {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      position: relative;
+
+      @media (max-width: $break-md) {
+        padding-top: 40px;
+      }
+
+      @media (max-width: $break-sms) {
+        padding-bottom: 40px;
+        padding-top: 0;
+      }
+
+      .content {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+
+        @media (max-width: $break-sms) {
+          width: 100%;
+        }
+
+        .discord-btn {
+          display: inline-flex;
+          padding: 13px 16px;
+          background: #5865F2;
+          border-radius: 8px;
+        }
+      }
+
+      .top-btn {
+        position: absolute;
+        right: 32px;
+
+        @media (max-width: $break-sms) {
+          bottom: 24px;
+        }
+      }
+    }
+  }
+}

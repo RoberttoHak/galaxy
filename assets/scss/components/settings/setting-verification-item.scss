@@ -1,0 +1,24 @@
+.verification-item {
+  background: #6B00C1;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 24px;
+
+  &_left {
+    display: flex;
+    align-items: center;
+    margin-right: 11px;
+  }
+  
+  &_title {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  &_subtitle {
+    color: white;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,36 @@
+.timer-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: $break-smsm) {
+    justify-content: center;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .count{
+      text-align: center;
+      backdrop-filter: blur(40px);
+      font-weight: bold;
+      font-size: 56px;
+      line-height: 100%;
+      letter-spacing: -0.025em;
+    }
+
+    .ending-timer{
+      color: #FF7051;
+    }
+
+    .text-m{
+      font-weight: 600;
+    }
+  }
+
+  .header-big{
+    margin-top: 0;
+  }
+}

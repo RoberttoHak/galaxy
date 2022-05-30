@@ -1,0 +1,44 @@
+$animationSpeed: 5s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-220px * 10))}
+}
+
+
+// Styling
+.leaderboard {
+	background: #08010E;
+	height: 40px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	color: white;
+  border-bottom: 1px solid #301C3F;
+
+	.leaderboard-track {
+		// animation: scroll $animationSpeed linear infinite;
+		display: flex;
+	}
+
+	.leaderboard-single {
+		line-height: 40px;
+    text-align: center;
+    min-width: 220px !important;
+
+		span {
+			display: block;
+			white-space: nowrap;
+			overflow: hidden;
+			padding-right: 5px;
+			text-overflow: ellipsis;
+      text-align: center;
+		}
+		&:first-child {
+			padding-left: 24px;
+		}
+	}
+}
+

@@ -1,0 +1,10 @@
+build/*.js
+config/*.js
+bower_components/foo/*.js
+ecosystem.config.js
+.gitignore
+coverage/
+*.json
+*.txt
+*.png
+*.png

@@ -1,0 +1,154 @@
+.filter-wrapper{
+  width: 63px;
+  height: 100%;
+  border-right: 1px solid $c-greyscale-100;
+  transition: width 0.3s ease-out;
+  margin-right: -63px;
+
+  .toggle-item{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 28px;
+    position: relative;
+
+    @media (max-width: $break-smsm) {
+      padding-top: 10px;
+    }
+
+    .count{
+      width: 18px;
+      height: 18px;
+      background: $c-primary;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: -7px;
+      right: 10px;
+
+      @media (max-width: $break-smsm) {
+        bottom: 6px;
+        //right: 10px;
+      }
+    }
+  }
+
+  .filter-icon{
+    cursor: pointer;
+  }
+
+  .filter-list{
+    height: 100%;
+    width: 100%;
+    padding: 16px 10px;
+    overflow-y: scroll;
+    @include scrollbar;
+
+
+    @media (max-width: $break-sms) {
+      overflow-y: scroll;
+      height: 100vh;
+      padding-bottom: 180px;
+    }
+
+    .header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left-side{
+        display: flex;
+        align-items: center;
+        width: 300px;
+
+        .title{
+          margin-left: 20px;
+        }
+      }
+
+      .right-side{
+        display: flex;
+      }
+    }
+
+    .desktop-header{
+      height: 48px;
+      border-left: 2px solid $c-white;
+
+      //@media (max-width: $break-smsm) {
+      //  display: none !important;
+      //}
+
+      .left-side{
+        margin-left: 12px;
+      }
+    }
+
+    .mobile-header{
+      display: none !important;
+
+      @media (max-width: $break-smsm) {
+        display: flex !important;
+      }
+    }
+
+    .filters{
+
+      .radio{
+        display: flex;
+      }
+      .apply-action{
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: $break-smsm) {
+          width: 247px;
+          justify-content: center;
+          margin: 0 auto 24px auto;
+        }
+      }
+    }
+  }
+}
+
+.big-desktop{
+  width: 312px;
+  transition: width 0.3s ease-out;
+  background: $c-greyscale-140;
+
+  //@media (max-width: $break-smsm) {
+  //  display: none;
+  //}
+}
+
+.big-mobile{
+  //display: none;
+
+  //@media (max-width: $break-smsm) {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 96px;
+    //top: 0;
+    background: $c-greyscale-140;
+    z-index: 1;
+    //padding-top: 56px;
+  //}
+}
+
+.apply-clear {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+
+  &_item {
+    &:hover {
+      cursor: pointer;
+    }
+}
+}

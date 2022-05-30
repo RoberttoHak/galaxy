@@ -1,0 +1,67 @@
+.galactic-wrapper{
+
+  h1{
+    margin-top: 20px;
+
+    @media (max-width: $break-sms) {
+      display: none;
+    }
+  }
+
+  .content{
+    background: $c-greyscale-100;
+    border-radius: 3px;
+    padding: 26px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $break-sm) {
+      flex-direction: column;
+    }
+
+    .left-side{
+      display: flex;
+
+      @media (max-width: $break-sm) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .img-block{
+        display: flex;
+        margin-right: 40px;
+        width: 80px;
+        height: 80px;
+      }
+
+      .info{
+        width: 494px;
+
+        @media (max-width: $break-mds) {
+          width: 100%;
+          margin-right: 70px;
+        }
+
+        @media (max-width: $break-sm) {
+          margin-right: 0;
+          text-align: center;
+          margin-top: 16px;
+        }
+      }
+    }
+
+    .right-side{
+      @media (max-width: $break-sm) {
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      .custom-button{
+        @media (max-width: $break-sm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

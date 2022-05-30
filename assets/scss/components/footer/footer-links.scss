@@ -1,0 +1,21 @@
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 32px;
+  width: 360px;
+
+  @media (max-width: $break-sms) {
+    justify-content: space-between;
+    padding: 0 8px;
+    display: flex;
+    width: 87%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  @media (max-height: 800px) {
+    position: static;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}

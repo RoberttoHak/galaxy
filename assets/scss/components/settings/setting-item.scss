@@ -1,0 +1,58 @@
+.setting-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 12px;
+  border: 1px solid $c-greyscale-120;
+  margin-bottom: 16px;
+
+  .left-side{
+    display: flex;
+    margin-right: 15px;
+
+    .icon-exists{
+      display: flex;
+      margin-right: 8px;
+    }
+
+    p{
+      color: $c-greyscale-20;
+    }
+
+    .progress-text{
+      color: #FFC988;
+    }
+    .success-text{
+      color: #1DD1A1;
+    }
+  }
+
+  .action{
+    display: flex;
+  }
+
+  .action-text{
+    cursor: pointer;
+  }
+}
+
+.status-success{
+  background: linear-gradient(0deg, rgba(29, 209, 161, 0.2), rgba(29, 209, 161, 0.2)), #1D1126;
+}
+
+.success-bg{
+  background: linear-gradient(0deg, rgba(29, 209, 161, 0.2), rgba(29, 209, 161, 0.2)), #1D1126;
+}
+.progress-bg{
+  background: linear-gradient(0deg, rgba(252, 215, 136, 0.1), rgba(252, 215, 136, 0.1)), #1D1126;
+}
+.warning-bg{
+  background: linear-gradient(0deg, rgba(255, 112, 81, 0.2), rgba(255, 112, 81, 0.2)), #1D1126;;
+}
+
+.no-margin{
+  margin-bottom: 0;
+}
+.cursor{
+  cursor: pointer;
+}

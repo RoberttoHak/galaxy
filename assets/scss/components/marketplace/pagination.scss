@@ -1,0 +1,34 @@
+.pagination{
+  display: flex;
+  align-items: center;
+
+  .first-item{
+    display: flex;
+    margin-right: 31px;
+    cursor: pointer;
+  }
+
+  .prev-item{
+    display: flex;
+    margin-right: 41px;
+    cursor: pointer;
+  }
+
+  .next-item{
+    display: flex;
+    margin-left: 31px;
+    cursor: pointer;
+    transform: rotate(180deg)
+  }
+
+  .last-item{
+    display: flex;
+    margin-left: 41px;
+    cursor: pointer;
+    transform: rotate(180deg)
+  }
+
+  .disabled{
+    cursor: not-allowed;
+  }
+}

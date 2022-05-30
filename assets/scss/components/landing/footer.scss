@@ -1,0 +1,44 @@
+footer{
+  background: linear-gradient(0deg, #11011F, #11011F), linear-gradient(170.73deg, #000 4.64%, #00081C 17.98%, #000B28 92.98%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+
+  @media (max-width: $break-sms) {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $break-mds) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    ul{
+      list-style-type: none;
+      display: flex;
+
+      li{
+        margin-right: 16px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+
+      .text-m{
+        @media (max-width: $break-xs) {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+

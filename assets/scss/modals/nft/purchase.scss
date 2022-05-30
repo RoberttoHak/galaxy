@@ -1,0 +1,81 @@
+.approving-nft {
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+.processing-nft {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D6D2D9;
+  font-size: 12px;
+
+  &_spinner {
+    margin-right: 10px;
+  }
+}
+
+.finished-nft {
+  background-color: #301C3F;
+  padding: 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+
+  div {
+    margin-bottom: 24px;
+  }
+
+  &_special-text {
+    color: #64A4FF;
+    text-decoration: none;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: -200%;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+img{
+  width: 100%;
+}

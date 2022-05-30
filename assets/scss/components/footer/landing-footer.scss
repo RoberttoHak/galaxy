@@ -1,0 +1,33 @@
+footer{
+  background: linear-gradient(0deg, #11011F, #11011F), linear-gradient(170.73deg, #000 4.64%, #00081C 17.98%, #000B28 92.98%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+
+  @media (max-width: $break-sms) {
+    padding-bottom: 90px;
+  }
+
+  .content{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+
+    .discord-btn {
+      display: inline-flex;
+      padding: 13px 16px;
+      background: #5865F2;
+      border-radius: 8px;
+    }
+  }
+
+  .top-btn{
+    position: absolute;
+    right: 32px;
+
+    @media (max-width: $break-sms) {
+      bottom: 24px;
+    }
+  }
+}
+

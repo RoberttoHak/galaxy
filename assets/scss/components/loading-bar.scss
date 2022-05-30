@@ -1,0 +1,53 @@
+.loading-page {
+  position: fixed;
+  top: -17px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  opacity: 0;
+
+  .color {
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.56),
+        rgba(73, 80, 196, 0.47)
+    ),
+    #4950c4;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    animation: move 5s ease-in-out infinite;
+  }
+
+  .img-block {
+    padding-top: 12px;
+    display: flex;
+  }
+}
+
+.can-show {
+  opacity: 1;
+}
+
+@keyframes move {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

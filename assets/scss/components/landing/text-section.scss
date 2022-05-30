@@ -1,0 +1,51 @@
+.text-section{
+  background: #11011F;
+
+
+  .full-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: $break-smsm) {
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .left-side{
+      width: 432px;
+      margin-right: 80px;
+
+      @media (max-width: $break-smsm) {
+        margin-right: 0;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 24px;
+      }
+
+      h2{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 95%;
+        letter-spacing: -0.01em;
+        color: $c-white;
+
+        @media (max-width: $break-smsm) {
+          font-size: 37px;
+          letter-spacing: -0.02em;
+        }
+      }
+    }
+
+    .right-side{
+      width: 432px;
+
+      @media (max-width: $break-smsm) {
+        width: 100%;
+        //text-align: center;
+      }
+    }
+  }
+}

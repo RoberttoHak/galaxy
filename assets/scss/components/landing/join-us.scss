@@ -1,0 +1,125 @@
+.join-us-wrapper{
+  background: #11011F;
+  //padding-top: 67px;
+  //padding-bottom: 67px;
+  padding-top: 80px;
+
+  @media (max-width: 1100px) {
+    padding-top: 0;
+  }
+
+  .full-container{
+    display: flex;
+    justify-content: space-between;
+    background: #420573;
+    border-radius: 16px;
+    padding: 46px 40px;
+    position: relative;
+    max-width: 1360px;
+
+    @media (max-width: 1380px) {
+      margin: 0 128px 0 128px;
+    }
+
+    @media (max-width: 1100px) {
+      margin: 0;
+      border-radius: 0;
+    }
+
+    @media (max-width: $break-smsm) {
+      padding-top: 42px;
+      padding-bottom: 42px;
+      align-items: center;
+    }
+
+    @media (max-width: $break-sms) {
+      flex-direction: column;
+    }
+
+
+    .left-side{
+      @media (max-width: $break-sms) {
+        margin-bottom: 40px;
+      }
+
+      h1{
+        color: $c-white;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 95%;
+        letter-spacing: -0.01em;
+        margin-bottom: 32px;
+
+        @media (max-width: $break-smsm) {
+          text-align: center;
+          margin-bottom: 24px;
+          font-size: 37px;
+          letter-spacing: -0.02em;
+        }
+      }
+
+      .action{
+        @media (max-width: $break-smsm) {
+          text-align: center;
+        }
+
+        .discord-btn{
+          display: inline-flex;
+          padding: 13px 16px;
+          background: #5865F2;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .right-side{
+
+      .follow{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: $c-white;
+        margin-bottom: 32px;
+
+        @media (max-width: $break-smsm) {
+          text-align: center;
+          margin-bottom: 24px;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 150%;
+        }
+      }
+
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media (max-width: $break-sms) {
+          justify-content: center;
+        }
+
+        li{
+          margin-right: 24px;
+
+          &:last-child{
+            margin-right: 0;
+          }
+
+          @media (max-width: $break-smsm) {
+            margin-right: 12px;
+            margin-left: 12px;
+          }
+
+          .social-link{
+            display: inline-flex;
+          }
+        }
+      }
+    }
+  }
+
+
+}

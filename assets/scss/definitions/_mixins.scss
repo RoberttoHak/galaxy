@@ -1,0 +1,32 @@
+@mixin main_container {
+  max-width: 1152px;
+  margin: 0 auto;
+
+  @media (max-width: 1152px){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (max-width: 600px){
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
+@mixin scrollbar{
+  &::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $c-greyscale-20;
+    border-radius: 8px;
+  }
+}
+

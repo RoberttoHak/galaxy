@@ -1,0 +1,37 @@
+.content{
+
+  .header-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .verification{
+    background: $c-greyscale-140;
+    border-radius: 3px;
+    padding: 12px;
+
+    .info-block{
+      display: flex;
+    }
+
+    .warning-info{
+      text-decoration: underline;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .success-text{
+      text-decoration: line-through;
+      color: $c-connected;
+    }
+
+    .action-text{
+      color: $c-connected;
+    }
+  }
+}
+
+.red{
+  color: #C12300;
+}

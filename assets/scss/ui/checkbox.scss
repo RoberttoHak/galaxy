@@ -1,0 +1,114 @@
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 420px) {
+    align-items: flex-start;
+  }
+
+  input {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    border: 1px solid $c-white;
+    box-sizing: border-box;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    transition: $transition;
+
+    &:hover {
+      border: 1px solid $c-greyscale-40;
+    }
+    &:focus {
+      border: 1px solid $c-prim-darker-10;
+    }
+
+    //@media (max-width: 420px) {
+    //  top: 5px;
+    //}
+
+
+    &:checked {
+      background: $c-primary;
+      border: 1px solid $c-primary;
+
+      &::after {
+        content: '';
+        background: url("~assets/img/icons/checkbox-mark.svg") no-repeat;
+        color: white;
+        width: 12px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+
+      @supports (-moz-appearance:none) {
+        &::after {
+          top: 6px;
+          left: 5px;
+        }
+      }
+    }
+  }
+
+  &__disabled{
+    border: 1px solid $c-white !important;
+    cursor: not-allowed !important;
+
+    &:checked{
+      background: $c-greyscale-20 !important;
+      border: 1px solid $c-greyscale-20 !important;
+    }
+  }
+
+  &__error{
+    border: 1px solid $c-system-error !important;
+
+    &:checked{
+      background: $c-system-error !important;
+      border: 1px solid$c-system-error !important;
+    }
+  }
+
+  .toggle-label {
+    cursor: pointer;
+  }
+
+  label {
+    cursor: pointer;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    //vertical-align: text-bottom;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.errors-list {
+  margin-top: 0;
+
+  p {
+    color: $c-system-error !important;
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+}
